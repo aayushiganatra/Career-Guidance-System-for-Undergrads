@@ -1,0 +1,222 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock %}
+
+
+{% load static %}
+{% block content %}
+
+	<body style = "background: #d3d3d3;">
+		
+	  <div class="main">
+		<div class="container_resource">
+			<h2 style="background: #646464;color:#fff;width: 200px;font-size: 24px;padding: 5px;height: 40px;">GRE Quant</h2>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="product-top">
+						<img src="{% static 'Images/Gre1.JPG' %}" width="42" height="152">
+						
+							<form action="{%url 'download_1' %}" method="post">
+							 {% csrf_token %}
+							  <input type = "Submit" value="Download"> 
+							  
+							</form>
+						
+					</div>
+					<div class="product-bottom text-center">
+						<h3></h3>
+						
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-top">
+						<img src="{% static 'Images/Gre2.JPG' %}" width="42" height="152">
+						
+						<form action="{%url 'download_2' %}" method="post">
+							 {% csrf_token %}
+							  <input type = "Submit" value="Download"> 
+							  <button type="button" class="btn btn-secondary" title="download"><i class="fa fa-download"></i></button>
+							</form>
+
+						
+					</div>
+					<div class="product-bottom text-center">
+						<h3>Manhattan Word Problem</h3>
+						<h5>Quant</h5>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-top">
+						<img src="{% static 'Images/Gre3.JPG' %}" width="42" height="152">
+						
+						<form action="{%url 'download_3' %}" method="post">
+							 {% csrf_token %}
+							  <input type = "Submit" value="Download"> 
+							  <button type="button" class="btn btn-secondary" title="download"><i class="fa fa-download"></i></button>
+							</form>
+					</div>
+					<div class="product-bottom text-center">
+						<h3>Word_Power</h3>
+						<h5>Vocabulary</h5>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-top">
+						<img src="{% static 'Images/Gre6.JPG' %}" width="42" height="152">
+						
+						<form action="{%url 'download_4' %}" method="post">
+							 {% csrf_token %}
+							  <input type = "Submit" value="Download"> 
+							  <button type="button" class="btn btn-secondary" title="download"><i class="fa fa-download"></i></button>
+							</form>
+
+						
+					</div>
+					<div class="product-bottom text-center">
+						<h3>Gre_Test_Book</h3>
+						<h5>Quant/Vocab</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container_resource">
+			<h2 style="background: #646464;color:#fff;width: 200px;font-size: 24px;padding: 5px;height: 40px;">GRE Vocab</h2>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="product-top">
+						<img src="{% static 'Images/Gre5.JPG' %}" width="42" height="152">
+						
+							<form action="{%url 'download_1' %}" method="post">
+							 {% csrf_token %}
+							  <input type = "Submit" value="Download"> 
+							  <input type = "Submit" button type="button" class="btn btn-secondary" title="download"><i class="fa fa-download"></i></button>
+							</form>
+						
+					</div>
+					<div class="product-bottom text-center">
+						<h3>Manhattan 5LBs</h3>
+						<h5>Quant/Vocab</h5>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-top">
+						<img src="{% static 'Images/Gre5.JPG' %}" width="42" height="152">
+						
+						<form action="{%url 'download_2' %}" method="post">
+							 {% csrf_token %}
+							  <input type = "Submit" value="Download"> 
+							  <button type="button" class="btn btn-secondary" title="download"><i class="fa fa-download"></i></button>
+							</form>
+
+						
+					</div>
+					<div class="product-bottom text-center">
+						<h3>Manhattan Word Problem</h3>
+						<h5>Quant</h5>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-top">
+						<img src="book2.jpg" width="42" height="152">
+						
+						<form action="{%url 'download_3' %}" method="post">
+							 {% csrf_token %}
+							  <input type = "Submit" value="Download"> 
+							  <button type="button" class="btn btn-secondary" title="download"><i class="fa fa-download"></i></button>
+							</form>
+					</div>
+					<div class="product-bottom text-center">
+						<h3>Word_Power</h3>
+						<h5>Vocabulary</h5>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-top">
+						<img src="book2.jpg" width="42" height="152">
+						
+						<form action="{%url 'download_4' %}" method="post">
+							 {% csrf_token %}
+							  <input type = "Submit" value="Download"> 
+							  <button type="button" class="btn btn-secondary" title="download"><i class="fa fa-download"></i></button>
+							</form>
+
+						
+					</div>
+					<div class="product-bottom text-center">
+						<h3>Gre_Test_Book</h3>
+						<h5>Quant/Vocab</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container_resource">
+			<h2 style="background: #646464;color:#fff;width: 300px;font-size: 24px;padding: 5px;height: 40px;">GRE AWA resources</h2>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="product-top">
+						<img src="book2.jpg" width="42" height="152">
+						
+							<form action="{%url 'download_1' %}" method="post">
+							 {% csrf_token %}
+							  <input type = "Submit" value="Download"> 
+							  <input type = "Submit" button type="button" class="btn btn-secondary" title="download"><i class="fa fa-download"></i></button>
+							</form>
+					</div>
+					<div class="product-bottom text-center">
+						<h3>Manhattan 5LBs</h3>
+						<h5>Quant/Vocab</h5>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-top">
+						<img src="book2.jpg" width="42" height="152">
+						<form action="{%url 'download_2' %}" method="post">
+							 {% csrf_token %}
+							  <input type = "Submit" value="Download"> 
+							  <button type="button" class="btn btn-secondary" title="download"><i class="fa fa-download"></i></button>
+							</form>		
+					</div>
+					<div class="product-bottom text-center">
+						<h3>Manhattan Word Problem</h3>
+						<h5>Quant</h5>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-top">
+						<img src="book2.jpg" width="42" height="152">
+						
+						<form action="{%url 'download_3' %}" method="post">
+							 {% csrf_token %}
+							  <input type = "Submit" value="Download"> 
+							  <button type="button" class="btn btn-secondary" title="download"><i class="fa fa-download"></i></button>
+							</form>
+					</div>
+					<div class="product-bottom text-center">
+						<h3>Word_Power</h3>
+						<h5>Vocabulary</h5>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="container_resource">
+			<h2 style="background: #646464;color:#fff;width: 300px;font-size: 24px;padding: 5px;height: 40px;">GRE General Resources</h2>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="product-top">
+						<img src="book2.jpg" width="42" height="152">
+						
+							<form action="{%url 'download_1' %}" method="post">
+							 {% csrf_token %}
+							  <input type = "Submit" value="Download"> 
+							  <input type = "Submit" button type="button" class="btn btn-secondary" title="download"><i class="fa fa-download"></i></button>
+							</form>
+						
+					</div>
+					<div class="product-bottom text-center">
+						<h3>Manhattan 5LBs</h3>
+						<h5>Quant/Vocab</h5>
+					</div>
+				</div>
+		</div>
+	</div>
+	{% endblock %}

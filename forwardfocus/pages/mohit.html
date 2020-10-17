@@ -1,0 +1,39 @@
+
+{% load static %}
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Drop Down menu</title>
+		<link rel="stylesheet" href="{% static 'css/style.css' %}"></link>
+	</head>
+	<body>
+		<!--<div class="search-box"><input type="text" name ="box" I> </div>-->
+		<div class="menu-bar">
+		<ul>
+			<li ><a href="">Home</li>
+			<li><a href="#">Evaluation</a>
+				<div class="sub-menu-1">
+					<ul>
+						<li><a href="{% url 'register' %}" >Profile Evaluation</a></li> 
+						<li><a href="#">Marks Evaluation</a></li>
+						<li><a href="#">University Finder</a></li>
+					</ul>
+				</div>
+					
+			</li>
+			<li><a href="#">Program</a>
+			<div class="sub-menu-1">
+					<ul>
+						<li><a href="#">GRE</a></li>
+						<li><a href="#">CAT</a></li>
+						<li><a href="#">GATE</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">About Us</a></li>
+		</ul>
+		 </div>
+		 <h1 font color="grey">How can Forward Focus help you?</h1>
+	</body>
+</html>

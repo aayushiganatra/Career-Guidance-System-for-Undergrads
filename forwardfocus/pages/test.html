@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> R </title>
+		<link rel="stylesheet" href="{% static 'css/rutu.css' %}"></link>
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"></link>
+		<div class="menu-bar">
+			<nav>
+				<img class="logo" src="{% static 'Images/LOGO_SE.PNG' %}">
+			<ul>
+				<li><a href="{%url 'home' %}">Home </li>
+				<li><a href="#">Evaluation <i class="fa fa-caret-down"></i></a>
+					<div class="sub-menu-1">
+						<ul>
+							<li><a href="{%url 'profile' %}">Profile Evaluation</a></li>
+							<li><a href="{%url 'score_evaluation_page' %}">Marks Evaluation</a></li>
+							<li><a href="{%url 'greuni' %}">University Finder</a></li>
+						</ul>
+					</div>
+						
+				</li>
+				<li><a href="#">Examinations <i class="fa fa-caret-down"></i></a>
+				<div class="sub-menu-1">
+						<ul>
+							<li><a href="{%url 'grehome' %}">GRE</a></li>
+							<li><a href="{%url 'cathome' %}">CAT</a></li>
+							<li><a href="{%url 'gatehome' %}">GATE</a></li>
+							<li><a href="{%url 'ieltshome' %}">IELTS</a></li>
+							<li><a href="{%url 'toeflhome' %}">TOEFL</a></li>
+							<li><a href="{%url 'gmathome' %}">GMAT</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="">Resources <i class="fa fa-caret-down"></i></a>
+				<div class="sub-menu-1">
+						<ul>
+							<li><a href="{%url 'gre_resources' %}">GRE</a></li>
+							<li><a href="{%url 'resources_cat' %}">CAT</a></li>
+							<li><a href="{%url 'resources_gate' %}">GATE</a></li>
+							<li><a href="{%url 'resources_ielts' %}">IELTS</a></li>
+							<li><a href="{%url 'resources_toefl' %}">TOEFL</a></li>
+							<li><a href="{%url 'resources_gmat' %}">GMAT</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="{%url 'aboutus' %}">About Us</a></li>
+				<li><a href="#">{{ user.username }} <i class="fa fa-caret-down"></i></a>
+				<div class="sub-menu-1">
+						<ul>
+							<li><a href="{%url 'myprofile' %}">My Profile</a></li>
+							<li><a href="{%url 'index' %}">Logout</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+			 </div>
+	</head>
+	<body>
+		
+	    <div class="main">
+		 
+		<div class="container">
+			<h2>GATE Resources</h2>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="product-top img">
+						<img src="{% static 'Images/book2.jpg' %}">
+						<div class="overlay">
+							<button type="button" class="btn btn-secondary" title="download"><i class="fa fa-download"></i></button>
+						</div>
+					</div>
+					<div class="product-bottom text-center">
+						<h3>GRE book 1</h3>
+						<h5>Details</h5>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-top img">
+						<img src="{% static 'Images/book2.jpg' %}">
+						<div class="overlay">
+							<button type="button" class="btn btn-secondary" title="download"><i class="fa fa-download"></i></button>
+						</div>
+					</div>
+					<div class="product-bottom text-center">
+						<h3>GRE book 1</h3>
+						<h5>Details</h5>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-top img">
+						<img src="{% static 'Images/book2.jpg' %}">
+						<div class="overlay">
+							<button type="button" class="btn btn-secondary" title="download"><i class="fa fa-download"></i></button>
+						</div>
+					</div>
+					<div class="product-bottom text-center">
+						<h3>GRE book 1</h3>
+						<h5>Details</h5>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-top img">
+						<img src="{% static 'Images/book2.jpg' %}">
+						<div class="overlay">
+							<button type="button" class="btn btn-secondary" title="download"><i class="fa fa-download"></i></button>
+						</div>
+					</div>
+					<div class="product-bottom text-center">
+						<h3>GRE book 1</h3>
+						<h5>Details</h5>
+					</div>
+				</div>
+		</div>
+    </div>
+</div>
+
+

@@ -1,0 +1,82 @@
+{% load static %}
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Drop Down menu</title>
+		<link rel="stylesheet" href="{% static 'css/style.css' %}"></link>
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"></link>
+		
+	</head>
+	<body>
+		
+	<div class="menu-bar">
+		<nav>
+			<img class="logo" src="{% static 'Images/LOGO_SE.PNG' %}">
+		<ul>
+			<li><a href="#">Home </li>
+			<li><a href="#">Evaluation <i class="fa fa-caret-down"></i></a>
+				<div class="sub-menu-1">
+					<ul>
+						<li><a href="#">Profile Evaluation</a></li>
+						<li><a href="#">Marks Evaluation</a></li>
+						<li><a href="#">University Finder</a></li>
+					</ul>
+				</div>
+					
+			</li>
+			<li><a href="#">Examinations <i class="fa fa-caret-down"></i></a>
+			<div class="sub-menu-1">
+					<ul>
+						<li><a href="#">GRE</a></li>
+						<li><a href="#">CAT</a></li>
+						<li><a href="#">GATE</a></li>
+						<li><a href="#">IELTS</a></li>
+						<li><a href="#">TOEFL</a></li>
+						<li><a href="#">GMAT</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">Resources <i class="fa fa-caret-down"></i></a>
+			<div class="sub-menu-1">
+					<ul>
+						<li><a href="#">GRE</a></li>
+						<li><a href="#">CAT</a></li>
+						<li><a href="#">GATE</a></li>
+						<li><a href="#">IELTS</a></li>
+						<li><a href="#">TOEFL</a></li>
+						<li><a href="#">GMAT</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">Contact Us </a></li>
+			<li><a href="#">{{ user.username }} <i class="fa fa-caret-down"></i></a>
+			<div class="sub-menu-1">
+					<ul>
+						<li><a href="#">My Profile</a></li>
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</nav>
+		 </div>
+		 <div class="form-style-5">
+			<form action="{%url 'dummy' %}" method="post">
+			 {% csrf_token %}
+				<fieldset>
+			<legend><span class="number">1</span> Candidate Info</legend>
+			
+			<input type="text" name="field1" placeholder="Your Name*" value = {{d_all.name}}>
+			<input type="text" name="field2" placeholder="Your Yearly Budget *" value = {{d_all.number}}>
+			</fieldset>
+			<input type="submit" value="Apply" />
+				
+			</form>
+			
+				{{user.id}}
+			
+			<a href = "{%url 'home' %}"> done </a>
+			</div>
+	</body>
+</html>
